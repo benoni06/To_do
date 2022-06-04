@@ -1,0 +1,50 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.cut{
+  text-decoration: line-through;
+}
+.butt{
+  width: auto;
+  border-color: rgba(102, 138, 170, 1);
+  background: rgba(102, 138, 170, 1);
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 99em;
+  padding: 7px 16px 9px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+}
+.app {
+  padding: 30px;
+  background-color: rgb(195, 187, 173);
+}
+.border{
+  width: 50vh;
+}
+
+
+.todo {
+  align-items: left;
+  background: rgb(212, 208, 208);
+  border-radius: 3px;
+  justify-content: left;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 12px;
+  justify-content: left;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+}
