@@ -1,50 +1,57 @@
 .centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* #root{
+    background-color: rgb(195, 187, 177);
 
+} */
+#container{
+  background-color: rgb(222, 222, 222);
+  height:100vh;
+}
 .cut{
-  text-decoration: line-through;
+text-decoration: line-through;
 }
 .butt{
-  width: auto;
-  border-color: rgba(102, 138, 170, 1);
-  background: rgba(102, 138, 170, 1);
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-  display: inline-block;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 99em;
-  padding: 7px 16px 9px;
-  line-height: 20px;
-  font-size: 14px;
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-tap-highlight-color: transparent;
+width: auto;
+border-color: rgba(102, 138, 170, 1);
+background: rgb(113, 122, 128);
+fill: rgb(46, 39, 39);
+color: rgba(255, 255, 255, 1);
+text-decoration: none;
+display: inline-block;
+box-sizing: border-box;
+border-style: solid;
+border-width: 1px;
+border-radius: 99em;
+padding: 7px 16px 9px;
+line-height: 20px;
+font-size: 14px;
+font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 400;
+-webkit-tap-highlight-color: transparent;
 }
 .app {
-  padding: 30px;
-  background-color: rgb(195, 187, 173);
+padding: 30px;
+/* background-color: rgb(195, 187, 173); */
 }
 .border{
-  width: 50vh;
+width: 50vh;
 }
 
 
 .todo {
-  align-items: left;
-  background: rgb(212, 208, 208);
-  border-radius: 3px;
-  justify-content: left;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  display: flex;
-  font-size: 12px;
-  justify-content: left;
-  margin-bottom: 6px;
-  padding: 3px 10px;
+align-items: left;
+background: rgb(197, 176, 176);
+border-radius: 3px;
+justify-content: left;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+display: flex;
+font-size: 12px;
+justify-content: left;
+margin-bottom: 6px;
+padding: 3px 10px;
 }

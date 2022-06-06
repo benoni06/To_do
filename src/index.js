@@ -39,7 +39,7 @@ function App() {
         localStorage.setItem("tasks",JSON.stringify(tasks));
     }
     return (
-        <>
+        <div id = "container">
           
             <div className='centered'>
                 <h1>To-Do List</h1>
@@ -64,7 +64,7 @@ function App() {
             </div>
             
 
-        </>
+        </div>
     )
 }
 
