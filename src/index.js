@@ -4,23 +4,28 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import { Todo } from './Todo';
 import { TodoList } from './TodoList';
+import axios from 'axios'
 
 function App() {
     const [text, setText] = useState("");
     const [tasks, setTasks] = useState([]);
     const [filter, setFilter] = useState("All");
+    const TodoListApi = () => {
 
+		axios.get('http://localhost:3000/about').then((response) => {
+        console.log(response); 
+        const {data} = response;
+			
+			setTasks(data);
+      })
+	};
 
     const taskValueChange = (val) => {
         setText(val);
     };
     useEffect(()=>{
-        let temp=localStorage.getItem("tasks");
-        console.log(temp);
-        if(temp){
-            setTasks(JSON.parse(temp));
-        }
-    },[]);
+        TodoListApi();
+    })
     const addTask = () => {
         setTasks([...tasks, { id: nanoid(), name: text, checked: false }]);
         setText("");
